@@ -10,8 +10,13 @@ searchBar.addEventListener("keyup", () => {
         document.getElementById("list").textContent = "";
         for (var i = 0; i < 5; i++) {
           var node = document.createElement("LI");
-          var textnode = document.createTextNode(`${data.filteredData[i]}`);
+		  var textnode = document.createTextNode(`${data.filteredData[i]}`);
+		  node.addEventListener("click",(event)=>{
 
+			console.log() ;
+			searchBar.value =   event.target.innerText;
+			document.getElementById("list").textContent = "";
+		  })
           node.appendChild(textnode);
           if (data.filteredData[i] !== undefined) {
             document.getElementById("list").appendChild(node);

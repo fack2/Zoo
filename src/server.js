@@ -2,9 +2,9 @@ const http = require('http');
 const router = require("./router");
 
 const server = http.createServer(router);
-const port = process.env.PORT || 4000;
-const host = process.env.HOST || 'localhost';
-// console.log(process.env);
-server.listen(port);
+const PORT = process.env.PORT || 4000;
 
-console.log("server running on: http://" + host + ":" + port);
+// console.log(process.env);
+server.listen(PORT);
+
+console.log("server running on:" + PORT);
