@@ -44,7 +44,7 @@ search.addEventListener("click", ()=>{
 	const div = document.querySelector("#images");
   div.textContent = "";
 	
-	request("http://api.giphy.com/v1/gifs/search?q=" +
+	request("https://api.giphy.com/v1/gifs/search?q=" +
 	searchBar.value +
 	"&api_key=p0FMwmf9fytJSZw4DQgJq6Vurt4S8oHv&limit=4", (result)=>{
 		console.log(result.data);
