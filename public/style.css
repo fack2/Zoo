@@ -11,7 +11,7 @@ body {
 .home {
 	background: url("https://media.licdn.com/dms/image/C4D12AQE0esIjazlQUw/article-cover_image-shrink_600_2000/0?e=1567641600&v=beta&t=j-O3aIlV5QQi_Jewy0p6BRmaNh4nqAbtQgL1JYLRXKs");
 	background-size: cover;
-	height: 55vh;
+	height: 25vh;
 	padding-top: 10%;
 }
 
@@ -72,7 +72,6 @@ img {
 
 .container {
 	min-height: 100%;
-	margin-bottom: -50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -95,8 +94,8 @@ img {
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
-    width: 40%;
+    height: 150px;
+    width: 35%;
     margin-bottom: 50px;
   }
 .animals{
@@ -108,5 +107,13 @@ img {
 
 .contain{
 	display: inline;
+
 } 
+
+#images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
 
