@@ -15,10 +15,17 @@ body {
 	padding-top: 10%;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .content-inner {
-	padding: 5%;
+	padding: 2%;
 	text-align: center;
 	padding-top: 5%;
+	margin-top: 5%;
+	width: 85%;
 }
 
 input {
@@ -26,7 +33,7 @@ input {
 	border-radius: 3px;
 	padding: 10px;
 	opacity: 0.7;
-	width: 65%;
+	width: 80%;
 }
 
 button {
@@ -36,7 +43,7 @@ button {
 }
 
 input[placeholder] {
-	text-align: center;
+	text-align: left;
 	color: black;
 	font-weight: bold;
 }
@@ -52,9 +59,7 @@ p {
 	text-shadow: black 5px 0px 5px;
 }
 
-.content-inner {
-	margin-top: 5%;
-}
+
 
 img {
 	border-radius: 5px 5px 0 0;
@@ -68,4 +73,40 @@ img {
 .container {
 	min-height: 100%;
 	margin-bottom: -50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	
 }
+li{
+    margin-left: -33px;
+	list-style-type: none;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 5px 0 5px 5px;
+	margin-bottom: 4px;
+	border-radius: 15px;
+	text-align: center;
+	padding:7px;
+
+}
+
+img {
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 40%;
+    margin-bottom: 50px;
+  }
+.animals{
+	border-radius: 10px;
+  
+	width: 65%;
+
+}
+
+.contain{
+	display: inline;
+} 
+
