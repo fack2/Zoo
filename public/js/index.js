@@ -19,12 +19,13 @@ searchBar.addEventListener("keyup", () => {
 		}
 	} 
 		
-		console.log(data.filteredData);
-	
-	
-	
+
 	})
       .catch(error => console.log(error));
+  }else {
+
+	document.getElementById("list").textContent = "";
+
   }
 });
 
