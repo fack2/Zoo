@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const matchedResults = require("./match");
+
 const homeHandler = (request, response) => {
 	const filePath = path.join(__dirname, "..", "public", "index.html");
 	fs.readFile(filePath, (error, file) => {
@@ -29,7 +30,7 @@ const publicHandler = (request, response, url) => {
 	};
 
 	const filePath = path.join(__dirname, "..", "public", url);
-	console.log("filePath", filePath);
+	// console.log("filePath", filePath);
 	fs.readFile(filePath, (error, file) => {
 		if (error) {
 			response.writeHead(500, {
@@ -46,9 +47,11 @@ const publicHandler = (request, response, url) => {
 };
 
 const searchHandler = (request, response) => {
+	console.log("========================================");
+
 	const inputValue = request.url.split("/")[2];
 
-	console.log(request.url);
+	// console.log(request.url);
 	const filePath = path.join(__dirname, "animals.txt");
 	fs.readFile(filePath, "utf8", (error, file) => {
 		if (error) {
@@ -62,12 +65,14 @@ const searchHandler = (request, response) => {
 				"Content-Type": "application/JSON"
 			});
 			const text = file.split("\n");
-			const fliterdData = matchedResults(text, inputValue);
-			const animals = JSON.stringify({ fliterdData });
-
-			// response.end();
-			console.log(fliterdData);
-			console.log(animals);
+			const filteredData = matchedResults(text, inputValue);
+			const animals = JSON.stringify({
+				filteredData
+			});
+			// console.log(text);
+			// console.log("i am filterd", filteredData);
+			// console.log("input", inputValue);
+			response.end(animals);
 		}
 	});
 };
