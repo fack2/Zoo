@@ -26,7 +26,7 @@ const publicHandler = (request, response, url) => {
 		css: "text/css",
 		js: "application/javascript",
 		jpg: "img/jpg",
-		txt: "text/plain"
+		txt: "text/plain",
 	};
 
 	const filePath = path.join(__dirname, "..", "public", url);
