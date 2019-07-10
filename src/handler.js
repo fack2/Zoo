@@ -47,8 +47,6 @@ const publicHandler = (request, response, url) => {
 };
 
 const searchHandler = (request, response) => {
-	console.log("========================================");
-
 	const inputValue = request.url.split("/")[2];
 
 	// console.log(request.url);
@@ -64,12 +62,13 @@ const searchHandler = (request, response) => {
 			response.writeHead(200, {
 				"Content-Type": "application/JSON"
 			});
-			const text = file.split("\n");
+			const text = file.split("\n").map(x=>x.toLowerCase());
+			
 			const filteredData = matchedResults(text, inputValue);
 			const animals = JSON.stringify({
 				filteredData
 			});
-			// console.log(text);
+			console.log(text);
 			// console.log("i am filterd", filteredData);
 			// console.log("input", inputValue);
 			response.end(animals);
