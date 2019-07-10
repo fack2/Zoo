@@ -6,7 +6,7 @@ website: https://zoo-dictionary.herokuapp.com/
 
 ## Wireframe:
 
-![ebd30fb4-b57c-4d9b-b893-d9ef31000d83](https://user-images.githubusercontent.com/47659847/60867834-62bc0880-a234-11e9-9e3e-2640a1ec5c1b.jpeg)
+![5ce03ccb-ab3b-4186-9a68-198b9ace94bd](https://user-images.githubusercontent.com/47659847/60971928-de4db080-a32d-11e9-8d9d-821d8df861dc.jpeg)
 
 ## User Journey
 
