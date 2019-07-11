@@ -2,7 +2,7 @@
 
 We are creating an auto-complete website for animal names.
 
-website: https://zoo-dictionary.herokuapp.com/
+website: https://the-zoo.herokuapp.com/
 
 ## Wireframe:
 
