@@ -20,16 +20,20 @@ website: https://the-zoo.herokuapp.com/
 - public:
   - index.html.
   - style.css.
+ - js
   - index.js.
+ - img
   - zoo.jpg.
 - src:
   - server.js.
   - router.js.
   - handler.js.
+  - match.js.
   - animals.txt.
 - package-lock.json.
 - package-.json.
 - README.md.
+- .gitignore
 
 ## Team Members
 
