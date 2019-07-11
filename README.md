@@ -1,4 +1,4 @@
-# Zoo-dictionary
+# The-Zoo
 
 We are creating an auto-complete website for animal names.
 
