@@ -30,7 +30,6 @@ const publicHandler = (request, response, url) => {
 	};
 
 	const filePath = path.join(__dirname, "..", "public", url);
-	// console.log("filePath", filePath);
 	fs.readFile(filePath, (error, file) => {
 		if (error) {
 			response.writeHead(500, {
@@ -48,8 +47,6 @@ const publicHandler = (request, response, url) => {
 
 const searchHandler = (request, response) => {
 	const inputValue = request.url.split("/")[2];
-
-	// console.log(request.url);
 	const filePath = path.join(__dirname, "animals.txt");
 	fs.readFile(filePath, "utf8", (error, file) => {
 		if (error) {
@@ -63,14 +60,11 @@ const searchHandler = (request, response) => {
 				"Content-Type": "application/JSON"
 			});
 			const text = file.split("\n").map(x=>x.toLowerCase());
-			
+
 			const filteredData = matchedResults(text, inputValue);
 			const animals = JSON.stringify({
 				filteredData
 			});
-			console.log(text);
-			// console.log("i am filterd", filteredData);
-			// console.log("input", inputValue);
 			response.end(animals);
 		}
 	});
