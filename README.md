@@ -12,6 +12,8 @@ website: https://the-zoo.herokuapp.com/
 
 1. A user should be able to inter an animal name into the input box.
 2. A user should see an auto complete as they type.
+3. A user should be able to click on list elements to autocomplete.
+4. A user should be able to see images or gifs of the animal he searched for after clicking on the search button.
 
 ## File Structure
 
